@@ -25,6 +25,12 @@ p {
     font-size: 2rem;
 
 }
+
+nav a {
+    list-style: none;
+    list-style: none;
+    color: white;
+}
  
 
 
@@ -80,4 +86,32 @@ p {
     flex-direction: column;
     align-items: center;
 
+}
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+div img:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+div img:nth-child(8) {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+
+}
+
+div img:nth-child(7) {
+    grid-row: span 3;
 }
