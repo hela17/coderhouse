@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <title>Preguntas Frecuentes</title>
-</head>
-<body>
-    <header class="encabezado">
-    
-    <!-- <img src="./imagenes/logo header.png" alt="logo" width="100" height="100">  -->
-    
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="nav__item"><a href="./sobreNosotros.html">Nosotros</a></li>
-                <li class="nav__item"><a href="./cartilla.html">Cartilla Médica</a></li>
-                <li class="nav__item"><a href="./galeria.html">Galeria</a></li>
-                <li class="nav__item"><a href="./contacto.html">Contacto</a></li>
-                <li class="nav__item"><a href="./preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/Logo_OSDE.png" alt="logo"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disable</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main></main>
+    <footer>
+      <p>Todos los derechos reservados. EL_HELA</p>
+    </footer>
 
-<footer>
-    <p>Todos los derechos reservados. EL_HELA</p>
-</footer>
-
-</body>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-
